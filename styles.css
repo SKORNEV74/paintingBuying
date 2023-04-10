@@ -92,21 +92,19 @@ a {
     background-color: #403432;
     color: #f4f6f9;
     border: 0;
+    width: 118px;
+    height: 48px;
+    text-align: center;
+    padding: 15px 0;
 }
 #buttonInput {
-    padding: 15px 35px;
+    width: 122px;
 }
 .buttonField {
-    padding: 15px 30px;
 }
 .buttonIntoBox {
     background-color: #5b3a32;
     color: #f4f6f9;
-    border: 0;
-    text-align: center;
-    width: 118px;
-    height: 48px;
-    padding: 15px 0;
 }
 .buttonIntoBox img {
     margin-right: 3px;
