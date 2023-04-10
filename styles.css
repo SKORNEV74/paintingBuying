@@ -71,16 +71,21 @@ a {
 }
 #textInput {
     background-color: #f6f3f3;
-    color: #9f9f9f;
-    border: 2px solid #e7e6e6;
-    border-radius: 0;
+    border: 2px solid #e1e1e1;
     width: 285px;
     height: 44px;
     padding: 0 0 0 10px;
+    outline: none;
 }
-#textInput:active{
+#textInput::placeholder {
+    color: #9f9f9f;
+}
+#textInput:focus {
     color: #343030;
+    border-color: #b5b5b5;
+
 }
+
 .button {
     background-color: #403432;
     color: #f4f6f9;
@@ -159,6 +164,9 @@ main {
     text-decoration: line-through;
     color: #a5a5a5;
 }
+.sold {
+    line-height: 48px;
+}
 footer {
     background-color: #eceaea;
     flex: 0 0 auto;
@@ -168,9 +176,13 @@ footer {
 }
 #contacts {
     display: flex;
-    margin-right: -30px;
+    margin-right: -85px;
 }
 .item {
     flex: 1 1 auto;
-    margin-right: 15px;
+    margin-right: 55px;
+}
+.item img {
+    margin-right: 10px;
+    margin-bottom: -2px;
 }
