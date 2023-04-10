@@ -45,14 +45,14 @@ h6,li {
     font-size: 14px;
     font-family: Merriweather-Light, serif;
 }
-form {
+#search {
     margin: 0;
     padding: 0;
 }
-form div {
+#search div {
     display: inline-block;
 }
-form div:last-child {
+#search div:last-child {
     margin: 0 0 0 -5px;
 }
 ul {
@@ -85,13 +85,15 @@ a {
     border-color: #b5b5b5;
 
 }
-
+#textInput, #buttonInput {
+    cursor: pointer;
+}
 .button {
     background-color: #403432;
     color: #f4f6f9;
     border: 0;
 }
-.buttonInput {
+#buttonInput {
     padding: 15px 35px;
 }
 .buttonField {
@@ -101,13 +103,19 @@ a {
     background-color: #5b3a32;
     color: #f4f6f9;
     border: 0;
-    padding: 15px 20px;
+    text-align: center;
+    width: 118px;
+    height: 48px;
+    padding: 15px 0;
+}
+.buttonIntoBox img {
+    margin-right: 3px;
 }
 .button:hover {
     background-color: #776763;
 }
 .disabled {
-    height: 47.6px;
+    height: 47px;
 }
 main,header,footer {
     width: 100%;
@@ -122,6 +130,9 @@ main,header,footer {
     display: flex;
     justify-content: space-between;
 }
+#fields {
+    justify-content: flex-start;
+}
 main {
     border-top: 2px solid #e7e6e6;
     flex: 1;
@@ -135,6 +146,7 @@ main {
 .field {
     border: 2px solid #e7e6e6;
     display: inline-block;
+    margin-right: 32px;
 }
 .field:last-child {
     opacity: 0.5;
@@ -171,7 +183,7 @@ footer {
     background-color: #eceaea;
     flex: 0 0 auto;
 }
-#footer {
+#footer, .item a {
     color: #555555;
 }
 #contacts {

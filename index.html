@@ -20,14 +20,12 @@
             </nav>
         </div>
         <div id="search">
-            <form>
-                <div>
-                    <input id="textInput" name="input" type="text" placeholder="Поиск по названию картины">
-                </div>
-                <div>
-                    <input class="button buttonInput" type="button" value="Найти">
-                </div>
-            </form>
+            <div>
+                <input id="textInput" name="input" type="text" placeholder="Поиск по названию картины">
+            </div>
+            <div>
+                <input class="button" id="buttonInput" type="button" value="Найти">
+            </div>
         </div>
     </div>
 </header>
@@ -35,10 +33,10 @@
     <div id="main">
         <h1>Картины эпохи Возрождения</h1>
         <div id="fields">
-            <div class="field">
+            <div class="field" id="card-1">
                 <div class="image"><img src="images/theBirthOfVenus.jpg" alt=""></div>
                 <div class="bottomField">
-                    <div class="fieldName"><h2>«Рождение Венеры»<br>Сандро Боттичелли</h2></div>
+                    <div class="fieldName"><h2 id="nameCard1">&laquo;Рождение Венеры&raquo;<br>Сандро Боттичелли</h2></div>
                     <div class="costAndButton">
                         <div class="cost">
                             <div class="oldCost">2 000 000 $</div>
@@ -50,10 +48,10 @@
                     </div>
                 </div>
             </div>
-            <div class="field">
+            <div class="field" id="card-2">
                 <div class="image"><img src="images/theLastSupper.jpg" alt=""></div>
                 <div class="bottomField">
-                    <div class="fieldName"><h2>«Тайная Вечеря»<br>Леонардо да Винчи</h2></div>
+                    <div class="fieldName"><h2 id="nameCard2">&laquo;Тайная Вечеря&raquo;<br>Леонардо да Винчи</h2></div>
                     <div class="costAndButton">
                         <div class="cost">
                             <div class="newCost">3 000 000 $</div>
@@ -62,23 +60,26 @@
                     </div>
                 </div>
             </div>
-            <div class="field">
+            <div class="field" id="card-3">
                 <div class="image"><img src="images/theCreationOfAdam.jpg" alt=""></div>
                 <div class="bottomField">
-                    <div class="fieldName"><h2>«Сотворение Адама»<br>Микеланджело</h2></div>
+                    <div class="fieldName"><h2 id="nameCard3">&laquo;Сотворение Адама&raquo;<br>Микеланджело</h2></div>
                     <div class="costAndButton">
                         <div class="cost">
                             <div class="oldCost">6 000 000 $</div>
                             <div class="newCost">5 000 000 $</div>
                         </div>
-                        <input class="buttonIntoBox" type="button" value="В корзине">
+                        <button class="buttonIntoBox">
+                            <img src="images/checked.svg" alt="">
+                            В корзине
+                        </button>
                     </div>
                 </div>
             </div>
-            <div class="field">
+            <div class="field" id="card-4">
                 <div class="image"><img src="images/theAnatomyLesson.jpg" alt=""></div>
                 <div class="bottomField">
-                    <div class="fieldName"><h2>«Урок анатомии»<br>Рембрандт</h2></div>
+                    <div class="fieldName"><h2 id="nameCard4">&laquo;Урок анатомии&raquo;<br>Рембрандт</h2></div>
                     <div class="disabled">
                         <div class="cost">
                             <div class="sold">Продана на аукционе</div>
@@ -104,8 +105,10 @@
         </div>
         <div id="contacts">
             <div class="item">
-                <img src="images/phone.svg" alt="">
-                +7 (812) 555-55-55
+                <a href="tel:+78125555555">
+                    <img src="images/phone.svg" alt="">
+                    +7 (812) 555-55-55
+                </a>
             </div>
             <div class="item">
                 <img src="images/mapmark.svg" alt="">
